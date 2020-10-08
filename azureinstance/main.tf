@@ -101,7 +101,7 @@ resource "random_id" "randomId" {
         resource_group = azurerm_resource_group.myterraformgroup.name
     }
     
-    byte_length = 8
+    byte_length = 16
 }
 
 # Create (and display) an SSH key
