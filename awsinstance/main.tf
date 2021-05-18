@@ -20,7 +20,7 @@ resource "aws_instance" "machine1" {
     tags = {
       "type" = var.myTag
     }
-    count = 1 # <<<
+    count = 2 # <<<
 }
 
 #resource "aws_instance" "machine2" {
