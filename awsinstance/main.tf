@@ -1,6 +1,6 @@
 provider "aws" {
     version = "2.69.0"
-    region="us-west-1"
+    region="us-east-1"
 }
 
 variable "instance_type" {
@@ -20,7 +20,7 @@ resource "aws_instance" "machine1" {
     tags = {
       "type" = var.myTag
     }
-    count = 2 # <<<
+    count = 1 # <<<
 }
 
 #resource "aws_instance" "machine2" {
